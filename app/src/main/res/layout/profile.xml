@@ -1,0 +1,174 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:id="@+id/fotoPerfil"
+            android:adjustViewBounds="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/baseline_supervised_user_circle_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Murillo Cardoso"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_marginTop="25dp"
+       android:padding="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/txtViewInfo"
+           android:text="Informações"
+           android:layout_width="wrap_content"
+           android:textSize="26dp"
+           android:textStyle="bold"
+           android:layout_height="match_parent"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/black" />
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="10dp"/>
+
+       <TextView
+           android:id="@+id/txtViewNome"
+           android:text="Nome:"
+           android:drawableLeft="@drawable/baseline_person_24"
+           android:layout_width="wrap_content"
+           android:textColor="@color/black"
+           android:drawablePadding="15dp"  android:textSize="20dp"
+           android:layout_height="match_parent"/>
+       <TextView
+           android:id="@+id/txtViewDataNome"
+           android:text="Murillo Cardoso"
+           android:layout_width="wrap_content"
+           android:textSize="22dp"
+           android:layout_height="match_parent"/>
+
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="10dp"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/black" /> <Space
+       android:layout_width="match_parent"
+       android:layout_height="10dp"/>
+       <TextView
+           android:id="@+id/txtViewEmail"
+           android:text="Email:"
+           android:drawableLeft="@drawable/baseline_email_24"
+           android:layout_width="wrap_content"
+           android:drawablePadding="15dp"
+           android:textColor="@color/black"
+           android:textSize="20dp"
+           android:layout_height="match_parent"/>
+       <TextView
+           android:id="@+id/txtViewDataEmail"
+           android:text="murillo@gmail.com"
+           android:layout_width="wrap_content"
+           android:textSize="22dp"
+           android:layout_height="match_parent"
+           tools:ignore="DuplicateIds" />
+
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="10dp"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/black" />
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="10dp"/>
+       <TextView
+           android:id="@+id/txtViewTelefone"
+           android:text="Telefone:"
+           android:drawableLeft="@drawable/baseline_call_24"
+           android:layout_width="wrap_content"
+           android:drawablePadding="15dp"
+           android:textSize="20dp"
+           android:textColor="@color/black"
+           android:layout_height="match_parent"/>
+       <TextView
+           android:id="@+id/txtViewDataTelefone"
+           android:text="48 998898988"
+           android:layout_width="wrap_content"
+           android:textSize="22dp"
+           android:layout_height="match_parent"/>
+       <Space
+       android:layout_width="match_parent"
+       android:layout_height="10dp"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/black" />
+       <Button
+           android:id="@+id/select_image_button"
+           android:adjustViewBounds="true"
+           android:drawableLeft="@drawable/baseline_image_search_24"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="Mudar foto de perfil"
+           android:src="@drawable/baseline_supervised_user_circle_24"
+           />
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="10dp"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/black" />
+       <Button
+           android:id="@+id/SairApp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="15dp"
+           android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+           android:text="Sair"
+           android:textSize="22dp"
+           android:textColor="@color/black"
+           android:backgroundTint="@color/white"
+           />
+   </LinearLayout>
+</LinearLayout>
+</ScrollView>
